@@ -19,7 +19,7 @@ Facade is a structural design pattern that provides a simplified interface to a 
  
  
  
- you can find this patern in this repository [Facade pattern](https://github.com/MeysamGhiasvand/DesignPatterns/tree/master/Facade).
+ you can find this patern in this repository [Facade pattern](https://github.com/MGH1024/DesignPatterns/tree/master/Facade).
 
 
 ### Singleton Design pattern
@@ -42,4 +42,4 @@ Singleton is a creational design pattern that lets you ensure that a class has o
  
  
  
- you can find this patern in this repository [Singleton pattern](https://github.com/MeysamGhiasvand/DesignPatterns/tree/master/Singleton).
+ you can find this patern in this repository [Singleton pattern](https://github.com/MGH1024/DesignPatterns/tree/master/Singleton).
