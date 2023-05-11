@@ -43,3 +43,12 @@ Singleton is a creational design pattern that lets you ensure that a class has o
  
  
  you can find this patern in this repository [Singleton pattern](https://github.com/MGH1024/DesignPatterns/tree/master/Singleton).
+
+
+
+### Template Design pattern
+The Template Method pattern is quite common in C# frameworks. Developers often use it to provide framework users with a simple <br/>
+means of extending standard functionality using inheritance.<br/>
+
+Identification: Template Method can be recognized if you see a method in base class that calls a bunch of other methods <br/>
+that are either abstract or empty.<br/>
