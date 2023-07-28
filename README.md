@@ -67,7 +67,7 @@ by 100, it must be divisible by 400 as well. We'll implement both a non-KiSS and
 the difference in simplicity and clarity. <br/>
 
 
-you can find this software design principle in this repository [KISS](https://github.com/MGH1024/DesignPatterns/tree/master/Singleton).
+you can find this software design principle in this repository [KISS](https://github.com/MGH1024/DesignPatterns/blob/master/SoftwareDesignPrinciples/Kiss.cs).
 
 
 In the non-KiSS example, the code contains nested if statements, making it slightly harder to read and understand the logic.  <br/>
