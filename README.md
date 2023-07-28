@@ -87,12 +87,12 @@ YAGNI (You Ain't Gonna Need It) is a principle of Extreme Programming (XP) that 
  Here's a simple example in C# to illustrate the YAGNI principle:
 
 Let's say you are working on a simple class that represents a basic calculator, and you have implemented addition and subtraction methods: <br/>
-[YaGNI](https://github.com/MGH1024/DesignPatterns/blob/master/SoftwareDesignPrinciples/yagni/SimpleCalculatorWithYagni.cs).
+[YAGNI](https://github.com/MGH1024/DesignPatterns/blob/master/SoftwareDesignPrinciples/Yagni/SimpleCalculatorWithYagni.cs).
 
 
 Now, imagine that later on, you or your team members have a discussion and think that it might be a good idea to add a multiplication 
 method to the calculator class, even though you don't have an immediate use case for it:
-[Violation of YaGNI](https://github.com/MGH1024/DesignPatterns/blob/master/SoftwareDesignPrinciples/yagni/SimpleCalculatorYagniViolation.cs).
+[Violation of YAGNI](https://github.com/MGH1024/DesignPatterns/blob/master/SoftwareDesignPrinciples/Yagni/SimpleCalculatorYagniViolation.cs).
 
 
 
