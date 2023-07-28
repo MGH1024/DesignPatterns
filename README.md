@@ -79,3 +79,31 @@ Again, keep in mind that simplicity should not be pursued at the cost of readabi
 Always aim for code that is both simple and easy to understand, but also consider factors like code comments, <br/>
 meaningful variable names, and clear logic to make your code more accessible to others.  <br/>
 The KiSS principle is just one aspect of writing clean and maintainable code.<br/>
+
+
+### YAGNI
+YAGNI (You Ain't Gonna Need It) is a principle of Extreme Programming (XP) that suggests not to implement functionality until it is necessary.
+ The idea is to avoid adding features or code that are not currently required, as it can lead to unnecessary complexity and maintenance overhead.
+ Here's a simple example in C# to illustrate the YAGNI principle:
+
+Let's say you are working on a simple class that represents a basic calculator, and you have implemented addition and subtraction methods: <br/>
+[YaGNI](https://github.com/MGH1024/DesignPatterns/blob/master/SoftwareDesignPrinciples/yagni/SimpleCalculatorWithYagni.cs).
+
+
+Now, imagine that later on, you or your team members have a discussion and think that it might be a good idea to add a multiplication 
+method to the calculator class, even though you don't have an immediate use case for it:
+[Violation of YaGNI](https://github.com/MGH1024/DesignPatterns/blob/master/SoftwareDesignPrinciples/yagni/SimpleCalculatorYagniViolation.cs).
+
+
+
+At this point, adding the Multiply method violates the YAGNI principle. If you don't currently need the multiplication functionality 
+in your application, you should avoid adding it to the class. Doing so introduces extra complexity to your codebase,
+ increases the maintenance burden, and may even lead to bugs that could have been avoided.
+
+Instead, you should wait until a legitimate requirement arises for multiplication in your application. By following 
+the YAGNI principle, you keep your codebase focused and lean, making it easier to manage and understand. 
+If and when you actually need the Multiply functionality, you can implement it at that time.
+
+
+
+
