@@ -11,7 +11,7 @@ Facade is a structural design pattern that provides a simplified interface to a 
 
 
 #### pros and cons
- 1-create loosly copupling . <br/>
+ 1-create loosely coupling . <br/>
  2-create layering in projects.<br/>
  3-clients don't know about subsystems.<br/>
  4-reduce dependencies.<br/>
@@ -19,16 +19,16 @@ Facade is a structural design pattern that provides a simplified interface to a 
  
  
  
- you can find this patern in this repository [Facade pattern](https://github.com/MGH1024/DesignPatterns/tree/master/Facade).
+ you can find this pattern in this repository [Facade pattern](https://github.com/MGH1024/DesignPatterns/tree/master/Facade).
 
 
 ### Singleton Design pattern
-Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
+Singleton is a creation design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
 
 #### Tips
 1- can use with lazy loading. <br/>
 2- Its better to create singleton class as a sealed class. <br/>
-3- for crate inheritence between singleton class and its child you should use protected constructor. <br/>
+3- for crate inheritance between singleton class and its child you should use protected constructor. <br/>
 
 
 #### pros 
@@ -38,11 +38,11 @@ Singleton is a creational design pattern that lets you ensure that a class has o
  
  #### cons
  1-create tightly coupling . <br/>
- 2- we can't transfer singleton ability to inherited classess.<br/>
+ 2- we can't transfer singleton ability to inherited classes.<br/>
  
  
  
- you can find this patern in this repository [Singleton pattern](https://github.com/MGH1024/DesignPatterns/tree/master/Singleton).
+ you can find this pattern in this repository [Singleton pattern](https://github.com/MGH1024/DesignPatterns/tree/master/Singleton).
 
 
 
@@ -52,3 +52,30 @@ means of extending standard functionality using inheritance.<br/>
 
 Identification: Template Method can be recognized if you see a method in base class that calls a bunch of other methods <br/>
 that are either abstract or empty.<br/>
+
+
+
+
+### KISS
+KiSS stands for "Keep it Simple, Stupid," which is a principle that encourages keeping code simple, straightforward
+and easy to understand. The idea is to avoid unnecessary complexity and convoluted solutions. Writing simple and clear 
+code not only makes it easier for others to read and maintain but also reduces the likelihood of introducing bugs.
+Let's illustrate the KiSS principle with a simple example: <br/>
+
+we need to check if a given year is a leap year or not. A leap year is divisible by 4, but if it is also divisible <br/>
+by 100, it must be divisible by 400 as well. We'll implement both a non-KiSS and a KiSS version to demonstrate <br/>
+the difference in simplicity and clarity. <br/>
+
+
+you can find this software design principle in this repository [KISS](https://github.com/MGH1024/DesignPatterns/tree/master/Singleton).
+
+
+In the non-KiSS example, the code contains nested if statements, making it slightly harder to read and understand the logic.  <br/>
+In contrast, the KiSS example utilizes a single line to check the conditions for a leap year,   <br/>
+which simplifies the code significantly. By eliminating the need for intermediate variables and nested conditions,  <br/>
+the KiSS example adheres to the principle of keeping the code simple and straightforward. <br/>
+
+Again, keep in mind that simplicity should not be pursued at the cost of readability or maintainability. <br/>
+Always aim for code that is both simple and easy to understand, but also consider factors like code comments, <br/>
+meaningful variable names, and clear logic to make your code more accessible to others.  <br/>
+The KiSS principle is just one aspect of writing clean and maintainable code.<br/>
