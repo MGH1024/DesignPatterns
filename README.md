@@ -163,7 +163,7 @@ Let's consider a practical example to understand lazy loading in EF Core:
 Suppose we have two entities: Author and Book. Each Author can have multiple Books, 
 and we want to use lazy loading to load the books of an author only when we access them.
 
-[Lazy Loading](https://github.com/MGH1024/DesignPatterns/blob/master/SoftwareDesignPrinciples/LazyLoading/LazyLoading_Ef.cs).
+[Lazy Loading in Ef](https://github.com/MGH1024/DesignPatterns/blob/master/SoftwareDesignPrinciples/LazyLoading/LazyLoading_Ef.cs).
 
 In the above example, when we retrieve an Author from the database using EF Core (context.Authors.FirstOrDefault(...)),
 the Books collection is not loaded immediately. It is only loaded when we access the Books property inside the 
