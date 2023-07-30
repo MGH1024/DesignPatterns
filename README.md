@@ -110,7 +110,7 @@ If and when you actually need the Multiply functionality, you can implement it a
 Let's consider another example of cohesion by creating a class that represents a simple shopping cart for an online store. 
 The goal is to keep related functionality together in the class to achieve high cohesion. <br/>
 
-[Cohesion](https://github.com/MGH1024/DesignPatterns/blob/master/SoftwareDesignPrinciples/Yagni/Cohesion.cs).
+[Cohesion](https://github.com/MGH1024/DesignPatterns/blob/master/SoftwareDesignPrinciples/Cohesion.cs).
 
 
 in this example, we have two classes: ShoppingCart and CartItem. The ShoppingCart class is responsible for managing the
