@@ -130,4 +130,56 @@ functionality can be handled within this class without affecting other parts of 
 
 
 
+### Lazy Loading 
+
+Lazy loading is a design pattern used to defer the loading of an object or resource until the point at which it is 
+actually needed. This can help improve performance and reduce resource consumption by only loading objects when 
+they are requested.
+
+Let's consider a practical example of lazy loading in C# using a class that represents a customer and its associated 
+orders. We'll use lazy loading to load the orders only when they are accessed, 
+rather than loading them eagerly when the customer object is created.
+
+[Lazy Loading](https://github.com/MGH1024/DesignPatterns/blob/master/SoftwareDesignPrinciples/LazyLoading/LazyLoading_Simple.cs).
+
+In this example, the Customer class has a lazy-loaded property Orders. The first time the Orders property is accessed, 
+it checks if the orders field is null (indicating that the orders haven't been loaded yet). If orders is null, 
+it calls the private method LoadOrders() to load the orders from a database or some external source. Subsequent 
+accesses to the Orders property will reuse the previously loaded orders.
+
+Using lazy loading in this scenario ensures that the customer's orders are only loaded when they are needed,
+not immediately when the Customer object is created. This can be especially beneficial when dealing with large 
+amounts of data or expensive resource operations, as it reduces unnecessary upfront loading and potentially 
+saves memory and processing time.
+
+
+<br/><br/>
+In Entity Framework (EF) Core, lazy loading is a feature that allows related entities to be automatically
+loaded from the database when they are accessed for the first time. By default, EF Core performs eager loading,
+which means it loads all related entities upfront when retrieving the main entity. However, lazy loading defers
+the loading of related entities until they are explicitly accessed, which can be more efficient in certain scenarios.
+
+Let's consider a practical example to understand lazy loading in EF Core:
+Suppose we have two entities: Author and Book. Each Author can have multiple Books, 
+and we want to use lazy loading to load the books of an author only when we access them.
+
+[Lazy Loading](https://github.com/MGH1024/DesignPatterns/blob/master/SoftwareDesignPrinciples/LazyLoading/LazyLoading_Ef.cs).
+
+In the above example, when we retrieve an Author from the database using EF Core (context.Authors.FirstOrDefault(...)),
+the Books collection is not loaded immediately. It is only loaded when we access the Books property inside the 
+foreach loop. This is what lazy loading does: deferring the loading of related entities until they 
+are actually accessed.
+
+It's important to note that to enable lazy loading, the Books property in the Author entity must be 
+marked as virtual. Additionally, make sure that lazy loading is enabled in the DbContext configuration 
+(optionsBuilder.UseLazyLoadingProxies()) as shown in the LibraryContext class.
+
+Lazy loading can be very useful in scenarios where you have complex object graphs with multiple 
+related entities, and you want to load only the data that is needed, reducing unnecessary database 
+queries and improving performance. However, it's essential to be mindful of potential performance
+issues, like the N+1 query problem, where lazy loading can result in numerous additional database 
+queries if not used carefully. In such cases, explicit loading or eager loading may be more appropriate.
+
+
+
 
