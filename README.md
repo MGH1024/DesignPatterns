@@ -105,5 +105,29 @@ the YAGNI principle, you keep your codebase focused and lean, making it easier t
 If and when you actually need the Multiply functionality, you can implement it at that time.
 
 
+###  Cohesion 
+
+Let's consider another example of cohesion by creating a class that represents a simple shopping cart for an online store. 
+The goal is to keep related functionality together in the class to achieve high cohesion. <br/>
+
+[Cohesion](https://github.com/MGH1024/DesignPatterns/blob/master/SoftwareDesignPrinciples/Yagni/Cohesion.cs).
+
+
+in this example, we have two classes: ShoppingCart and CartItem. The ShoppingCart class is responsible for managing the
+items in the shopping cart, and it contains methods related to cart management. The CartItem class represents
+an individual item in the cart, and it encapsulates the details of a product, including its name, price, and quantity.
+
+The methods within the ShoppingCart class are highly cohesive as they all relate to the concept of a shopping cart 
+and work together to manage the cart effectively:
+
+1-AddItem: Adds a new item to the cart or updates the quantity if the item is already present.
+2-RemoveItem: Removes an item from the cart based on the product name.
+3-CalculateTotal: Calculates the total cost of all items in the cart.
+4-DisplayCart: Displays the items in the cart along with the total cost.
+By keeping these related functionalities together in the ShoppingCart class,
+we ensure that the code is well-organized and easy to maintain. Any changes or enhancements to the shopping cart 
+functionality can be handled within this class without affecting other parts of the application.
+
+
 
 
